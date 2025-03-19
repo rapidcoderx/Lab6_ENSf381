@@ -1,31 +1,7 @@
 import React from 'react';
-
-function Home({ title, description }) {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </div>
-  );
-}
-
-function About({ title, description }) {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </div>
-  );
-}
-
-function Contact({ title, description }) {
-  return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-    </div>
-  );
-}
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
 
 function App() {
   return (
