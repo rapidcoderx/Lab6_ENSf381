@@ -1,15 +1,38 @@
-import React from 'react'
+import React from 'react';
 
-const currentYear = new Date().getFullYear();
-const isLoggedIn = true; 
+function Home({ title, description }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+  );
+}
+
+function About({ title, description }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+  );
+}
+
+function Contact({ title, description }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
+  );
+}
 
 function App() {
   return (
     <div>
-      <h1>ENSF-381: Full Stack Web Development</h1>
-      <p>React Components</p>
-      <p>{currentYear}</p>
-      {isLoggedIn ? <p>Welcome Back!</p> : <p>Please log in</p>}
+      <Home title="Home Page" description="Welcome to our website." />
+      <About title="About Us" description="We are passionate about delivering quality experiences." />
+      <Contact title="Contact Us" description="Feel free to reach out to us via email or phone." />
     </div>
   );
 }
